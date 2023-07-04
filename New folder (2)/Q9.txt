@@ -1,0 +1,5 @@
+9. Calculate the average price of all products in each category and display the results along with the category name.
+
+5 points
+
+Ans:  df.groupby("catergory","product").agg(avg("price").alias("Avg_price")).sort(col("catergory").show()

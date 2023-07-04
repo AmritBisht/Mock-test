@@ -1,0 +1,7 @@
+5. Given a PySpark DataFrame named "logs" with columns "timestamp" (timestamp) and "event" (string), write a code to count the number of events that occurred in each hour and display the result sorted by the hour.
+
+5 points
+
+Ans:  >>> df = logsdf.df.select(hour("timestamp").alias("hour"),"event")
+
+      >>> df.groupby("hour").count("event").show()

@@ -1,0 +1,4 @@
+2.  Given a PySpark DataFrame named "sales_data" with columns "product_name" and "revenue", write a code to calculate the total revenue for each product and display the result in descending order.
+5 points
+
+Ans:  >>> saledf.groupBy("product_name").agg(sum("revenue").alias("total_revenue")).sort(col("total_revenue").DESC()).show()

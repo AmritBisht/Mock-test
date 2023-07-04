@@ -1,0 +1,5 @@
+10. Retrieve the top 5 customers who have spent the highest total amount on purchases.
+
+5 points
+
+Ans: df.groupby("customers").agg(sum("amount").alias("total_amt").sort(col("total_amt").ASC()).show(5)

@@ -1,0 +1,8 @@
+
+3. Write a PySpark code to read a JSON file named "students.json" containing student records with the following schema: "name" (string), "age" (integer), "grade" (string). Filter the DataFrame to include only students whose age is greater than 18.
+
+5 points
+
+Ans: >>> jsonDf = spark.read.json("/input_data/students.json")
+
+     >>> jsonDF.filter(col("age") > 18).select("name","age","grade").show()

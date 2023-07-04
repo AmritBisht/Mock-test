@@ -1,0 +1,5 @@
+8. Retrieve the names of all products that are currently out of stock from the "Products" table.
+
+5 points
+
+Ans: df.filter(col("stock") == 0).show()

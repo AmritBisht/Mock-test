@@ -1,0 +1,5 @@
+4. Consider a PySpark DataFrame named "transactions" with columns "transaction_id", "user_id", and "amount". Write a code to calculate the average transaction amount for each user and display the result.
+
+5 points
+
+Ans: >>> transdf.groupBy("user_id").agg(avg("amount").alias("Avg_Amount")).show()

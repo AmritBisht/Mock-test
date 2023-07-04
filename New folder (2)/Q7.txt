@@ -1,0 +1,5 @@
+7. Find the total number of orders placed by each customer and display the results in descending order of the number of orders.
+
+5 points
+
+Ans: cusdf.groupby("customer").agg(count("order").alias("total_order").sort(col("total_order").DESC()).show()

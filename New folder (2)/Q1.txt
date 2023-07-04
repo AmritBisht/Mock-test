@@ -1,0 +1,53 @@
+
+Write a PySpark code to read a CSV file named "employees.csv" containing the following columns: "employee_id", "name", "age", "department". Display the top 10 records from the DataFrame.
+5 points
+
+Ans: >>> empdf = spark.read.option("header",True).option("inferSchema",True).csv("/input_data/employees.csv")
+
+     >>> empdf.select(col("employee_id"),col("age"),col("department")).show(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
